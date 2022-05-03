@@ -1,0 +1,140 @@
+html {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+  }
+  body {
+    width: 100;
+    height:auto;
+    margin: 0.5 auto;
+    border:5px solid black;
+  }
+
+.italien {
+    background: #fff;
+    width: 70px;
+    height:100px;
+    border-left: 70px solid #0F0;
+    border-right: 70px solid red;
+    }
+
+.deutschland {
+    width:250px;
+    height: 30px;
+    background:#f00;
+    border-top:30px solid #000;
+    border-bottom:30px solid #fc0;
+    display:none;
+}
+.frankreich {
+    background: white;
+    width: 100px;
+    height:150px;
+    border-left: 70px solid #00D;
+    border-right: 70px solid red;
+    display:none;
+    }
+
+ .flaggen{
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+    }
+
+  .anrede{
+    display: flex;
+    padding: 5px;
+    justify-content:center;  
+    margin-right:5rem;
+  }
+  .textstd{
+    max-width:600px;
+    display: flex;
+    padding: 5px;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:3rem;
+    margin-right:5rem;
+    
+  }
+.deutsch{
+  display:none;
+}
+.franz{
+  display:none;
+}
+.ital{
+  display:flex-start;
+
+}
+
+  @media (min-width: 768px ) and (max-width: 991px) {
+  
+  .frankreich{
+      display:none;
+   }
+
+  .italien{
+    display:none;
+  }
+
+.deutschland{
+  display:block;
+}
+
+  .ital{
+    display:none;
+  }
+
+  .franz{
+    display:none;
+  }
+  .deutsch{
+    display:block;
+  }
+}
+#text{
+  display:flex;
+  width:50;
+  height:auto;
+  margin-left:10rem;
+
+}
+.textstd{
+  display: flex;
+  flex-direction:column;
+  
+}
+  @media (min-width: 992px) {
+
+.deutschland{
+      display:none;
+      }
+
+.italien{
+    display:none;
+}
+.frankreich{
+  display:block;
+}
+
+.ital{
+  display:none;
+}
+
+.deutsch{
+  display:none;
+}
+.franz{
+  display:block;
+}
+.anrede{
+  display:flex;
+}
+
+#text{
+  display:flex;
+  margin-left:auto;
+}
+}
